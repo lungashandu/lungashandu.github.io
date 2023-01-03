@@ -46,6 +46,19 @@ button
 
 }
 
+
+button:hover {
+    background-color: #FBF37C;
+    color: #fefefe;
+}
+
+
+button:active {
+  background-color: #cacaca;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 #container{
     width: 100%;
     margin: 8px;
@@ -93,6 +106,10 @@ img {
     position: relative;
     margin-top: -250px;
     opacity: 90%;
+}
+
+.icons {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 800px){
