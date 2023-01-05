@@ -116,6 +116,15 @@ img {
     .leftpane, .rightpane {
         width: 100%;
     }
+    #right_image{
+        width: 100%;
+    }
+    #title{
+        font-size: 20vw;
+    }
+    hr{
+        width: 100%;
+    }
     
 }
 
