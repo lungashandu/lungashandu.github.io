@@ -6,6 +6,7 @@ p {
     font-family: 'Roboto';
     color: #fefefe;
     padding-right: 42px;
+    overflow-y: auto;
 }
 
 #display_id {
@@ -125,6 +126,11 @@ img {
     hr{
         width: 100%;
     }
+
+.modal{
+  transform: translate(0, -20%);
+}
+
     
 }
 
@@ -153,6 +159,7 @@ img {
 {
     padding: 2px 16px;
     background-color: #000;
+    
 }
 
 .modal-content
