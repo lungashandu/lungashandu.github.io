@@ -5,8 +5,16 @@ body {
 p {
     font-family: 'Roboto';
     color: #fefefe;
-    padding-right: 42px;
     overflow-y: auto;
+}
+
+h4 {
+    font-family: 'Roboto';
+    font-size: 1.2em;
+}
+
+.leftpane p {
+    padding-right: 42px;
 }
 
 #display_id {
@@ -128,9 +136,23 @@ img {
     }
 
 .modal{
-  transform: translate(0, -20%);
+  transform: translate(0, -9%);
+  
 }
 
+.modal-body{
+    width: 100%;
+}
+
+.modal-body p {
+    padding-right: 15px;
+}
+
+.modal-content {
+    margin-top: 20px;
+    width: 95%;
+    max-height: 90vh;
+}
     
 }
 
@@ -146,7 +168,7 @@ img {
     height: 100%;
     overflow: hidden;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-header
@@ -157,9 +179,10 @@ img {
 
 .modal-body
 {
-    padding: 2px 16px;
+    padding-left: 20px;
     background-color: #000;
     overflow-y: auto;
+    flex-grow: 1;
     
 }
 
