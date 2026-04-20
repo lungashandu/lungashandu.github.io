@@ -97,7 +97,9 @@ img {
     height: 100%;
     float: left;
     z-index: -1;
-    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 #right_image{
@@ -111,22 +113,86 @@ img {
 #bottom_div{
     background-color: #FBF37C;
     width: 100%;
-    height: 20%;
+    height: 140px;
     position: relative;
     margin-top: -140px;
     opacity: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#bottom_div p {
+    color: #000;
+    margin: 0 0 8px 0;
+    font-size: 1em;
+    font-weight: 600;
+    padding-right: 0;
 }
 
 .icons {
     cursor: pointer;
 }
 
+.project-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Roboto';
+}
+
+.project-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 1em;
+    transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+    color: #444;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+.separator {
+    color:#000;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 800px){
     .leftpane, .rightpane {
         width: 100%;
+        float: none;
     }
+
+    .rightpane {
+        height: auto;
+        min-height: 70vh;
+    }
+
+    #bottom_div {
+        margin-top: -80px;
+    }
+
+    .project-links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .separator {
+        display: none;
+    }
+
     #right_image{
         width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
     }
     #title{
         font-size: 20vw;
